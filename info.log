@@ -1,0 +1,1716 @@
+Dec 01 21:01:02 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Ceph Manager Status ---- [4.0]] Send message to Telegram
+Dec 01 21:01:02 netbox-server python[1897214]: [db.zenhub.json] ---- Ceph Manager Status ----
+Severity: Warning ⚠️
+Description:
+ - Ceph Manager currently 4.0/5 Mgrs
+ - Ceph Manager is Unhealthy 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:02 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Virtual Machine Status ---- Name: temp-opnsense-24.7 Node: pve02 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:02 netbox-server python[1897214]: [db.zenhub.json] ---- Virtual Machine Status ----
+Name: temp-opnsense-24.7
+Node: pve02
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:02 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Virtual Machine Status ---- Name: temp-opnsense-99.101 Node: pve02 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:02 netbox-server python[1897214]: [db.zenhub.json] ---- Virtual Machine Status ----
+Name: temp-opnsense-99.101
+Node: pve02
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:02 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Virtual Machine Status ---- Name: temp-ubuntu2204 Node: pve02 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:02 netbox-server python[1897214]: [db.zenhub.json] ---- Virtual Machine Status ----
+Name: temp-ubuntu2204
+Node: pve02
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:02 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Virtual Machine Status ---- Name: W2W125d105 Node: pve03 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:02 netbox-server python[1897214]: [db.zenhub.json] ---- Virtual Machine Status ----
+Name: W2W125d105
+Node: pve03
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Overcommit CPU Status ---- Instance: 10.10.99.2:16490 [200.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.2:16490
+Severity: Warning ⚠️
+Description:
+ - Overcommit CPU is 200.0%
+ - 8 CPU allocated for OS
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Overcommit CPU Status ---- Instance: 10.10.99.5:16490 [169.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.5:16490
+Severity: Warning ⚠️
+Description:
+ - Overcommit CPU is 169.0%
+ - 8 CPU allocated for OS
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Overcommit CPU Status ---- Instance: 10.10.99.4:16490 [122.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.4:16490
+Severity: Warning ⚠️
+Description:
+ - Overcommit CPU is 122.0%
+ - 8 CPU allocated for OS
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Memory Used Status ---- Instance: 10.10.99.5:9100 Job: node-exporter [78.47960874506191]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Memory Used Status ----
+Instance: 10.10.99.5:9100
+Job: node-exporter
+Severity: Warning ⚠️
+Description: High Memory Used is 78.47960874506191%
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436224000 Ifname: Ethernet1/5 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436224000
+Ifname: Ethernet1/5
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436228096 Ifname: Ethernet1/6 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436228096
+Ifname: Ethernet1/6
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436232192 Ifname: Ethernet1/7 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436232192
+Ifname: Ethernet1/7
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436236288 Ifname: Ethernet1/8 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436236288
+Ifname: Ethernet1/8
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436240384 Ifname: Ethernet1/9 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436240384
+Ifname: Ethernet1/9
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436244480 Ifname: Ethernet1/10 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436244480
+Ifname: Ethernet1/10
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436248576 Ifname: Ethernet1/11 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436248576
+Ifname: Ethernet1/11
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436252672 Ifname: Ethernet1/12 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436252672
+Ifname: Ethernet1/12
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436256768 Ifname: Ethernet1/13 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436256768
+Ifname: Ethernet1/13
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436260864 Ifname: Ethernet1/14 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436260864
+Ifname: Ethernet1/14
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436264960 Ifname: Ethernet1/15 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436264960
+Ifname: Ethernet1/15
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436269056 Ifname: Ethernet1/16 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436269056
+Ifname: Ethernet1/16
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://acc.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://acc.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436273152 Ifname: Ethernet1/17 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436273152
+Ifname: Ethernet1/17
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436277248 Ifname: Ethernet1/18 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436277248
+Ifname: Ethernet1/18
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436281344 Ifname: Ethernet1/19 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436281344
+Ifname: Ethernet1/19
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://api.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://api.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436285440 Ifname: Ethernet1/20 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436285440
+Ifname: Ethernet1/20
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436289536 Ifname: Ethernet1/21 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436289536
+Ifname: Ethernet1/21
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://apiqlsx.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://apiqlsx.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436293632 Ifname: Ethernet1/22 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436293632
+Ifname: Ethernet1/22
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436297728 Ifname: Ethernet1/23 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436297728
+Ifname: Ethernet1/23
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://banhang.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://banhang.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436301824 Ifname: Ethernet1/24 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436301824
+Ifname: Ethernet1/24
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436305920 Ifname: Ethernet1/25 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436305920
+Ifname: Ethernet1/25
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://congviectailieu.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://congviectailieu.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436310016 Ifname: Ethernet1/26 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436310016
+Ifname: Ethernet1/26
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436326400 Ifname: Ethernet1/30 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436326400
+Ifname: Ethernet1/30
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 83886080 Ifname: mgmt0 Instance: 10.10.99.253 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 83886080
+Ifname: mgmt0
+Instance: 10.10.99.253
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://demoacc.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://demoacc.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://demobanhang.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://demobanhang.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436224000 Ifname: Ethernet1/5 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436224000
+Ifname: Ethernet1/5
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436228096 Ifname: Ethernet1/6 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436228096
+Ifname: Ethernet1/6
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436232192 Ifname: Ethernet1/7 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436232192
+Ifname: Ethernet1/7
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436236288 Ifname: Ethernet1/8 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436236288
+Ifname: Ethernet1/8
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://hosocongty.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://hosocongty.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436240384 Ifname: Ethernet1/9 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436240384
+Ifname: Ethernet1/9
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436244480 Ifname: Ethernet1/10 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436244480
+Ifname: Ethernet1/10
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436248576 Ifname: Ethernet1/11 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436248576
+Ifname: Ethernet1/11
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://ngocthamcatalog.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://ngocthamcatalog.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436252672 Ifname: Ethernet1/12 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436252672
+Ifname: Ethernet1/12
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436256768 Ifname: Ethernet1/13 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436256768
+Ifname: Ethernet1/13
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436260864 Ifname: Ethernet1/14 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436260864
+Ifname: Ethernet1/14
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://pmns.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://pmns.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436264960 Ifname: Ethernet1/15 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436264960
+Ifname: Ethernet1/15
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436269056 Ifname: Ethernet1/16 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436269056
+Ifname: Ethernet1/16
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436273152 Ifname: Ethernet1/17 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436273152
+Ifname: Ethernet1/17
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://qlsxntj.ntjc.org [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://qlsxntj.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 2.0 (SSL Error)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436277248 Ifname: Ethernet1/18 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436277248
+Ifname: Ethernet1/18
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436281344 Ifname: Ethernet1/19 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436281344
+Ifname: Ethernet1/19
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436285440 Ifname: Ethernet1/20 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436285440
+Ifname: Ethernet1/20
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436289536 Ifname: Ethernet1/21 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436289536
+Ifname: Ethernet1/21
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436293632 Ifname: Ethernet1/22 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436293632
+Ifname: Ethernet1/22
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436297728 Ifname: Ethernet1/23 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436297728
+Ifname: Ethernet1/23
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://svn.ntjc.org [401.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://svn.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 401.0 (Unauthorized)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436301824 Ifname: Ethernet1/24 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436301824
+Ifname: Ethernet1/24
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://svn.ntjc.org [401.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://svn.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 401.0 (Unauthorized)
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436305920 Ifname: Ethernet1/25 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436305920
+Ifname: Ethernet1/25
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436310016 Ifname: Ethernet1/26 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436310016
+Ifname: Ethernet1/26
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 436326400 Ifname: Ethernet1/30 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 436326400
+Ifname: Ethernet1/30
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] [True] [---- Cisco Interface Status ---- Ifindex: 83886080 Ifname: mgmt0 Instance: 10.10.99.252 [2.0]] Send message to Telegram
+Dec 01 21:01:03 netbox-server python[1897214]: [db.zenhub.json] ---- Cisco Interface Status ----
+Ifindex: 83886080
+Ifname: mgmt0
+Instance: 10.10.99.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- ICMP Response Time ---- Description: IDrac PVE Node 5 Instance: 192.168.100.100:16490 Ip: 192.168.100.64 Job: cus_exporter [0.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- ICMP Response Time ----
+Description: IDrac PVE Node 5
+Instance: 192.168.100.100:16490
+Ip: 192.168.100.64
+Job: cus_exporter
+Severity: Warning ⚠️
+Description:
+ - ICMP Response Time is 0.0ms
+ - Device is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 1 Ifname: mgmt Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 1
+Ifname: mgmt
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 10 Ifname: port6 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 10
+Ifname: port6
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 11 Ifname: port7 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 11
+Ifname: port7
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 12 Ifname: port8 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 12
+Ifname: port8
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 13 Ifname: port9 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 13
+Ifname: port9
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 14 Ifname: port10 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 14
+Ifname: port10
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 15 Ifname: port11 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 15
+Ifname: port11
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 16 Ifname: port12 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 16
+Ifname: port12
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 17 Ifname: port13 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 17
+Ifname: port13
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 18 Ifname: port14 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 18
+Ifname: port14
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 23 Ifname: modem Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 23
+Ifname: modem
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 6 Ifname: port2 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 6
+Ifname: port2
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 7 Ifname: port3 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 7
+Ifname: port3
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 8 Ifname: port4 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 8
+Ifname: port4
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifindex: 9 Ifname: port5 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifindex: 9
+Ifname: port5
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifalias: Local LACP L3 Line  03 Ifindex: 21 Ifname: port17 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifalias: Local LACP L3 Line  03
+Ifindex: 21
+Ifname: port17
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifalias: Local LACP L3 Line  04 Ifindex: 22 Ifname: port18 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifalias: Local LACP L3 Line  04
+Ifindex: 22
+Ifname: port18
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Fortigate Interface Status ---- Ifalias: VNPT Internet Line Safe Ifindex: 4 Ifname: wan2 Instance: 192.168.123.1 [2.0]] Send message to Telegram
+Dec 01 21:01:04 netbox-server python[1897146]: [db.ntjc.json] ---- Fortigate Interface Status ----
+Ifalias: VNPT Internet Line Safe
+Ifindex: 4
+Ifname: wan2
+Instance: 192.168.123.1
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: Proxy-backup100d117 Node: pve06 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: Proxy-backup100d117
+Node: pve06
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: template-focal-server-cloudimg-amd64 Node: pve06 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: template-focal-server-cloudimg-amd64
+Node: pve06
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: template-jammy-server-cloudimg-amd64 Node: pve06 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: template-jammy-server-cloudimg-amd64
+Node: pve06
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: hoanghd-demo1-100.244 Node: pve05 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: hoanghd-demo1-100.244
+Node: pve05
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: temp-windows2022STD Node: pve01 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: temp-windows2022STD
+Node: pve01
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: template-pfsense Node: pve01 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: template-pfsense
+Node: pve01
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: k8s-standalone-100.101 Node: pve01 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: k8s-standalone-100.101
+Node: pve01
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: template-opnsense Node: pve01 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: template-opnsense
+Node: pve01
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: node1-192.168.100.131 Node: pvebk Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: node1-192.168.100.131
+Node: pvebk
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: template-centos7-custom Node: pve01 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: template-centos7-custom
+Node: pve01
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: pbx-server-100.99 Node: pve05 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: pbx-server-100.99
+Node: pve05
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: node2-192.168.100.132 Node: pvebk Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: node2-192.168.100.132
+Node: pvebk
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: node3-192.168.100.133 Node: pvebk Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: node3-192.168.100.133
+Node: pvebk
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: node4-192.168.100.134 Node: pvebk Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: node4-192.168.100.134
+Node: pvebk
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: ods5-192.168.100.135 Node: pve01 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: ods5-192.168.100.135
+Node: pve01
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: template-centos7-qcow2-server-cloudimg-amd64 Node: pve01 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: template-centos7-qcow2-server-cloudimg-amd64
+Node: pve01
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: template-focal-server-cloudimg-amd64 Node: pve01 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: template-focal-server-cloudimg-amd64
+Node: pve01
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: template-jammy-server-cloudimg-amd64 Node: pve01 Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: template-jammy-server-cloudimg-amd64
+Node: pve01
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: node5-192.168.100.135 Node: pvebk Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: node5-192.168.100.135
+Node: pvebk
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: node6-192.168.100.136 Node: pvebk Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: node6-192.168.100.136
+Node: pvebk
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Virtual Machine Status ---- Name: node7-192.168.100.137 Node: pvebk Type: qemu [0.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Virtual Machine Status ----
+Name: node7-192.168.100.137
+Node: pvebk
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Memory Used Status ---- Instance: 10.10.10.6:9100 Job: node-exporter [71.30291852506957]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Memory Used Status ----
+Instance: 10.10.10.6:9100
+Job: node-exporter
+Severity: Warning ⚠️
+Description: High Memory Used is 71.30291852506957%
+Contacts: hoanghd, khoanh
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 1 Ifname: Gi0/0 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:05 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 1
+Ifname: Gi0/0
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 36 Ifname: Te1/1/1 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 36
+Ifname: Te1/1/1
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 37 Ifname: Te1/1/2 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 37
+Ifname: Te1/1/2
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 38 Ifname: Te1/1/3 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 38
+Ifname: Te1/1/3
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 39 Ifname: Te1/1/4 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 39
+Ifname: Te1/1/4
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Access Internet Laptop Demo Ifindex: 18 Ifname: Gi1/0/11 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Access Internet Laptop Demo
+Ifindex: 18
+Ifname: Gi1/0/11
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Connect to Fortigate 200E Ifindex: 33 Ifname: Gi1/1/2 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Connect to Fortigate 200E
+Ifindex: 33
+Ifname: Gi1/1/2
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Connect to Fortigate 200E Ifindex: 34 Ifname: Gi1/1/3 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Connect to Fortigate 200E
+Ifindex: 34
+Ifname: Gi1/1/3
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Connect to Fortigate 200E Ifindex: 35 Ifname: Gi1/1/4 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Connect to Fortigate 200E
+Ifindex: 35
+Ifname: Gi1/1/4
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Connect to eno3 all Node Ifindex: 26 Ifname: Gi1/0/19 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Connect to eno3 all Node
+Ifindex: 26
+Ifname: Gi1/0/19
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Internet Line 03 Ifindex: 27 Ifname: Gi1/0/20 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Internet Line 03
+Ifindex: 27
+Ifname: Gi1/0/20
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 71 Ifname: Te2/1/1 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 71
+Ifname: Te2/1/1
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 72 Ifname: Te2/1/2 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 72
+Ifname: Te2/1/2
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 73 Ifname: Te2/1/3 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 73
+Ifname: Te2/1/3
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 74 Ifname: Te2/1/4 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 74
+Ifname: Te2/1/4
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Connect To Wan Safe Server Ifindex: 55 Ifname: Gi2/0/13 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Connect To Wan Safe Server
+Ifindex: 55
+Ifname: Gi2/0/13
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Connect to Fortigate 200E Ifindex: 68 Ifname: Gi2/1/2 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Connect to Fortigate 200E
+Ifindex: 68
+Ifname: Gi2/1/2
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Connect to Fortigate 200E Ifindex: 69 Ifname: Gi2/1/3 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Connect to Fortigate 200E
+Ifindex: 69
+Ifname: Gi2/1/3
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Connect to Fortigate 200E Ifindex: 70 Ifname: Gi2/1/4 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Connect to Fortigate 200E
+Ifindex: 70
+Ifname: Gi2/1/4
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifalias: Internet Line 02 Ifindex: 65 Ifname: Gi2/0/23 Instance: 192.168.123.2 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifalias: Internet Line 02
+Ifindex: 65
+Ifname: Gi2/0/23
+Instance: 192.168.123.2
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436228096 Ifname: Ethernet1/6 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436228096
+Ifname: Ethernet1/6
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436232192 Ifname: Ethernet1/7 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436232192
+Ifname: Ethernet1/7
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436236288 Ifname: Ethernet1/8 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436236288
+Ifname: Ethernet1/8
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436240384 Ifname: Ethernet1/9 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436240384
+Ifname: Ethernet1/9
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436244480 Ifname: Ethernet1/10 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436244480
+Ifname: Ethernet1/10
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436248576 Ifname: Ethernet1/11 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436248576
+Ifname: Ethernet1/11
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436252672 Ifname: Ethernet1/12 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436252672
+Ifname: Ethernet1/12
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436256768 Ifname: Ethernet1/13 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436256768
+Ifname: Ethernet1/13
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436260864 Ifname: Ethernet1/14 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:06 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436260864
+Ifname: Ethernet1/14
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436264960 Ifname: Ethernet1/15 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436264960
+Ifname: Ethernet1/15
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436269056 Ifname: Ethernet1/16 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436269056
+Ifname: Ethernet1/16
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436273152 Ifname: Ethernet1/17 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436273152
+Ifname: Ethernet1/17
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436277248 Ifname: Ethernet1/18 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436277248
+Ifname: Ethernet1/18
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436281344 Ifname: Ethernet1/19 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436281344
+Ifname: Ethernet1/19
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436285440 Ifname: Ethernet1/20 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436285440
+Ifname: Ethernet1/20
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436297728 Ifname: Ethernet1/23 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436297728
+Ifname: Ethernet1/23
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436301824 Ifname: Ethernet1/24 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436301824
+Ifname: Ethernet1/24
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436305920 Ifname: Ethernet1/25 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436305920
+Ifname: Ethernet1/25
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436310016 Ifname: Ethernet1/26 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436310016
+Ifname: Ethernet1/26
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436314112 Ifname: Ethernet1/27 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436314112
+Ifname: Ethernet1/27
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436318208 Ifname: Ethernet1/28 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436318208
+Ifname: Ethernet1/28
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436322304 Ifname: Ethernet1/29 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436322304
+Ifname: Ethernet1/29
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Cisco Interface Status ---- Ifindex: 436326400 Ifname: Ethernet1/30 Instance: 192.168.100.252 [2.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- Cisco Interface Status ----
+Ifindex: 436326400
+Ifname: Ethernet1/30
+Instance: 192.168.100.252
+Severity: Warning ⚠️
+Description:
+ - Interface Code is 2.0
+ - Interface is Down 😭
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: acc.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-07-03 16:10:53+00:00 Notbefore: 2024-04-04 16:10:54+00:00 Port: 443 [-151.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: acc.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-07-03 16:10:53+00:00
+Notbefore: 2024-04-04 16:10:54+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -151.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: apiqlsx.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-07-03 16:11:59+00:00 Notbefore: 2024-04-04 16:12:00+00:00 Port: 443 [-151.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: apiqlsx.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-07-03 16:11:59+00:00
+Notbefore: 2024-04-04 16:12:00+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -151.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: demoqlsx.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-07-04 16:12:04+00:00 Notbefore: 2024-04-05 16:12:05+00:00 Port: 443 [-150.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: demoqlsx.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-07-04 16:12:04+00:00
+Notbefore: 2024-04-05 16:12:05+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -150.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: demobanhang.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-07-30 03:55:56+00:00 Notbefore: 2024-05-01 03:55:57+00:00 Port: 443 [-125.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: demobanhang.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-07-30 03:55:56+00:00
+Notbefore: 2024-05-01 03:55:57+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -125.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: qlsxntj.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-07-07 16:12:01+00:00 Notbefore: 2024-04-08 16:12:02+00:00 Port: 443 [-147.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: qlsxntj.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-07-07 16:12:01+00:00
+Notbefore: 2024-04-08 16:12:02+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -147.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: api.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-07-07 16:11:05+00:00 Notbefore: 2024-04-08 16:11:06+00:00 Port: 443 [-147.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: api.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-07-07 16:11:05+00:00
+Notbefore: 2024-04-08 16:11:06+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -147.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: pmns.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-07-04 16:13:10+00:00 Notbefore: 2024-04-05 16:13:11+00:00 Port: 443 [-150.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: pmns.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-07-04 16:13:10+00:00
+Notbefore: 2024-04-05 16:13:11+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -150.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: congviectailieu.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-06-24 16:11:39+00:00 Notbefore: 2024-03-26 16:11:40+00:00 Port: 443 [-160.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: congviectailieu.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-06-24 16:11:39+00:00
+Notbefore: 2024-03-26 16:11:40+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -160.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: banhang.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-08-01 03:55:37+00:00 Notbefore: 2024-05-03 03:55:38+00:00 Port: 443 [-123.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: banhang.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-08-01 03:55:37+00:00
+Notbefore: 2024-05-03 03:55:38+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -123.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: ngocthamcatalog.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-07-03 16:13:10+00:00 Notbefore: 2024-04-04 16:13:11+00:00 Port: 443 [-151.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: ngocthamcatalog.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-07-03 16:13:10+00:00
+Notbefore: 2024-04-04 16:13:11+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -151.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: demoacc.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-07-04 16:11:36+00:00 Notbefore: 2024-04-05 16:11:37+00:00 Port: 443 [-150.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: demoacc.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-07-04 16:11:36+00:00
+Notbefore: 2024-04-05 16:11:37+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -150.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] [True] [---- SSL Expiration Warning ---- Domain: qlsx.ntjc.org Instance: 192.168.100.100:16490 Ipaddr: 192.168.100.123 Issuer: R3 Job: cus_exporter Notafter: 2024-07-07 16:11:32+00:00 Notbefore: 2024-04-08 16:11:33+00:00 Port: 443 [-147.0]] Send message to Telegram
+Dec 01 21:01:07 netbox-server python[1897146]: [db.ntjc.json] ---- SSL Expiration Warning ----
+Domain: qlsx.ntjc.org
+Instance: 192.168.100.100:16490
+Ipaddr: 192.168.100.123
+Issuer: R3
+Job: cus_exporter
+Notafter: 2024-07-07 16:11:32+00:00
+Notbefore: 2024-04-08 16:11:33+00:00
+Port: 443
+Severity: Warning ⚠️
+Description:
+ - SSL is about to expire 🙃
+ - SSL Expiration is -147.0 days
+Contacts: hoanghd, khoanh
+Dec 01 21:02:08 netbox-server python[1897146]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://svn.ntjc.org [401.0]] Send message to Telegram
+Dec 01 21:02:08 netbox-server python[1897146]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://svn.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 401.0 (Unauthorized)
+Contacts: hoanghd, khoanh

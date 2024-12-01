@@ -29,8 +29,8 @@ default:
     send_msg: True
     form_msg: markdown
     debug_bot:
-      bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-      chat_id: -4572608076
+      bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+      chat_id: -675948425
 
 ## All rules are defined here
 rules:
@@ -103,16 +103,16 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - HTTP Status Code is {{ value }} ({{ unit }})
       - compare: False
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - HTTP Status Code is {{ value }} ({{ unit }})
     msg:
@@ -139,8 +139,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - ICMP Response Time is {{ value }}{{ unit }}
           - Device is Down 😭
@@ -148,8 +148,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - ICMP Response Time is {{ value }}{{ unit }}
           - Device is Up 🥰
@@ -174,8 +174,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - TCP Status is {{ value }}
           - Device is {{ unit }}
@@ -183,8 +183,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - TCP Status is {{ value }}
           - Device is {{ unit }}
@@ -393,8 +393,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - ZFS Pool Capacity is {{ value }}{{ unit }}
           - State of Emergency 🆘
@@ -402,8 +402,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - ZFS Pool Capacity is {{ value }}{{ unit }}
           - State of Emergency Resolved ❤️
@@ -428,8 +428,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - ZFS Pool Status Code is {{ value }}
           - ZFS Pool Status is {{ unit }}
@@ -437,8 +437,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - ZFS Pool Status Code is {{ value }}
           - ZFS Pool Status is {{ unit }}
@@ -464,16 +464,16 @@ rules:
         severity: Info ℹ️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - '{{ value }} {{ unit }} waitings for backup'
       - compare: False
         severity: Finished backup all volumes 😇
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
     msg:
       contacts: 
         - hoanghd
@@ -496,16 +496,16 @@ rules:
         severity: Info ℹ️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Staring Process Backup 😇
       - compare: False
         severity: Finish Process Backup 🎉
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
     msg:
       contacts: 
         - hoanghd
@@ -527,8 +527,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Fortigate HA Status is {{ value }}
           - HA is {{ unit }}
@@ -536,8 +536,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Fortigate HA Status is {{ value }}
           - HA is {{ unit }}
@@ -562,8 +562,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Interface Code is {{ value }}
           - Interface is {{ unit }}
@@ -571,8 +571,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Interface Code is {{ value }}
           - Interface is {{ unit }}
@@ -598,8 +598,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Virtual Machine is {{ value }}
           - State is {{ unit }}
@@ -607,8 +607,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Virtual Machine is {{ value }}
           - State is {{ unit }}
@@ -637,8 +637,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - OS Drive Capacity is {{ value }}{{ unit }}
           - State of Emergency 🆘
@@ -646,8 +646,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - OS Drive Capacity is {{ value }}{{ unit }}
           - State of Emergency Resolved ❤️
@@ -675,8 +675,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Overcommit Memory is {{ value }}{{ unit }}
           - 8G memory allocated for OS
@@ -684,8 +684,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Overcommit Memory is {{ value }}{{ unit }}
           - 8G memory allocated for OS
@@ -711,8 +711,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Overcommit CPU is {{ value }}{{ unit }}
           - 8 CPU allocated for OS
@@ -720,8 +720,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Overcommit CPU is {{ value }}{{ unit }}
           - 8 CPU allocated for OS
@@ -749,8 +749,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - CPU Temperature is {{ value }}{{ unit }}
           - Overheat 🔥
@@ -758,8 +758,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - CPU Temperature is {{ value }}{{ unit }}
           - Normal 🥰
@@ -785,16 +785,16 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - High Memory Used is {{ value }}{{ unit }}
       - compare: False
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - High Memory Used is {{ value }}{{ unit }}
     msg:
@@ -819,16 +819,16 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - High CPU Usage is {{ value }}{{ unit }}
       - compare: False
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - High CPU Usage is {{ value }}{{ unit }}
     msg:
@@ -853,8 +853,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Interface Code is {{ value }}
           - Interface is {{ unit }}
@@ -862,8 +862,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - Interface Code is {{ value }}
           - Interface is {{ unit }}
@@ -893,8 +893,8 @@ rules:
         severity: Warning ⚠️
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - SSL is about to expire 🙃
           - SSL Expiration is {{ value }} {{ unit }}
@@ -902,8 +902,8 @@ rules:
         severity: Resolved ✅
         send_msg: True
         telegram:
-          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
-          chat_id: -4572608076
+          bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
+          chat_id: -675948425
         description: 
           - SSL has been renewed ❤️
           - SSL Expiration is {{ value }} {{ unit }}
