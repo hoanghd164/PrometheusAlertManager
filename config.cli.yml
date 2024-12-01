@@ -1,0 +1,11 @@
+ip_status:
+  enabled: True
+  targets:
+    staging_server:
+      - 10.90.24.32
+    physical_servers:
+      - 8.8.8.8
+      - 8.8.4.4
+
+    virtual_servers:
+      - 1.1.1.1

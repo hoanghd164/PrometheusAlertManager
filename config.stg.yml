@@ -1,0 +1,200 @@
+---
+## All configuration are defined here
+default:
+  debug: False
+  interval: 2
+  log_debug: True
+  prometheus_info:
+    url: http://192.168.100.253:9090/api/v1/query
+
+  database:
+    prefix: alert_
+    type: file # mongodb, file
+    host: localhost
+    port: 27017
+    username: root
+    password: mongodb_password
+
+  msg:
+    proxies:
+      enable: True 
+      ipaddr: 192.168.100.100
+      port: 3128
+    rabbitmq: 
+      enable: True
+      host: localhost
+      queue: telegram_queue
+      username: hoanghd
+      password: rabbitmq_password
+    send_msg: True
+    form_msg: markdown
+    debug_bot:
+      bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+      chat_id: -4572608076
+
+## All rules are defined here
+rules:
+## LAYER 7, HTTP STATUS CODE ALERT
+  - query: demo_metric
+    title: Http Status Code
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 0: 'Network Unreachable'
+        - 1: 'Connection Timedout'
+        - 2: 'SSL Error'
+        - 100: 'Continue'
+        - 101: 'Switching Protocols'
+        - 400: 'Bad Request'
+        - 401: 'Unauthorized'
+        - 402: 'Payment Required'
+        - 403: 'Forbidden'
+        - 404: 'Not Found'
+        - 405: 'Method Not Allowed'
+        - 406: 'Not Acceptable'
+        - 407: 'Proxy Authentication Required'
+        - 408: 'Request Timeout'
+        - 409: 'Conflict'
+        - 410: 'Gone'
+        - 411: 'Length Required'
+        - 412: 'Precondition Failed'
+        - 413: 'Payload Too Large'
+        - 414: 'URI Too Long'
+        - 415: 'Unsupported Media Type'
+        - 416: 'Range Not Satisfiable'
+        - 417: 'Expectation Failed'
+        - 418: 'Im a teapot'
+        - 421: 'Misdirected Request'
+        - 426: 'Upgrade Required'
+        - 428: 'Precondition Required'
+        - 429: 'Too Many Requests'
+        - 431: 'Request Header Fields Too Large'
+        - 451: 'Unavailable For Legal Reasons'
+        - 500: 'Internal Server Error'
+        - 501: 'Not Implemented'
+        - 502: 'Bad Gateway'
+        - 503: 'Service Unavailable'
+        - 504: 'Gateway Timeout'
+        - 505: 'HTTP Version Not Supported'
+        - 506: 'Variant Also Negotiates'
+        - 507: 'Insufficient Storage'
+        - 508: 'Loop Detected'
+        - 510: 'Not Extended'
+        - 511: 'Network Authentication Required'
+      threshold_info:
+        - 200: 'OK'
+        - 201: 'Created'
+        - 202: 'Accepted'
+        - 203: 'Non-Authoritative Information'
+        - 204: 'No Content'
+        - 205: 'Reset Content'
+        - 206: 'Partial Content'
+        - 300: 'Multiple Choices'
+        - 301: 'Moved Permanently'
+        - 302: 'Found'
+        - 303: 'See Other'
+        - 304: 'Not Modified'
+        - 305: 'Use Proxy'
+        - 307: 'Temporary Redirect'
+        - 308: 'Permanent Redirect'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          Status Number: '{{ value }}'
+          Status Description: '{{ unit }}'
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          Status Number: '{{ value }}'
+          Status Description: '{{ unit }}'
+    msg:
+      contacts: 
+        - hoanghd
+        - thienln
+        - khoanh
+      verify: 1
+      resend: 0
+
+#   - query: demo_metric
+#     title: Ceph Pool Percent Used
+#     enable: True
+#     compare: '>'
+#     values:
+#       threshold_warn:
+#         - 75: '%'
+#         - 80: '%'
+#         - 85: '%'
+#         - 90: '%'
+#         - 95: '%'
+#       threshold_unit: 
+#         - unit: '%'
+#     alerts:
+#       - compare: True
+#         severity: Warning ⚠️
+#         send_msg: True
+#         telegram:
+#           bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+#           chat_id: -4572608076
+#         description: 
+#           - Ceph Pool Percent Used is {{ value }}{{ unit }}
+#           - State of Emergency 🆘
+#       - compare: False
+#         severity: Resolved ✅
+#         send_msg: True
+#         telegram:
+#           bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+#           chat_id: -4572608076
+#         description: 
+#           - Ceph Pool Percent Used is {{ value }}{{ unit }}
+#           - State of Emergency Resolved ❤️
+#     msg:
+#       contacts: 
+#         - hoanghd
+#         - thienln
+#         - khoanh
+#       verify: 10
+#       resend: 0
+      
+#   - query: demo_metric
+#     title: Volumes Waiting Backup
+#     enable: True
+#     compare: '!='
+#     values:
+#       threshold_warn:
+#         - 0: volumes 0
+#         - 1: volumes 1
+#         - 2: volumes 2
+#       threshold_unit: 
+#         - unit: volumes
+#     alerts:
+#       - compare: True
+#         severity: Info ℹ️
+#         send_msg: True
+#         telegram:
+#           bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+#           chat_id: -4572608076
+#         description: 
+#           - '{{ value }} {{ unit }} waitings for backup'
+#       - compare: False
+#         severity: Finished backup all volumes 😇
+#         send_msg: True
+#         telegram:
+#           bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+#           chat_id: -4572608076
+#     msg:
+#       contacts: 
+#         - hoanghd
+#         - thienln
+#         - khoanh
+#       verify: 10
+#       resend: 0

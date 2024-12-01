@@ -1,0 +1,915 @@
+---
+## All configuration are defined here
+default:
+  debug: False
+  interval: 60
+  log_debug: False
+  prometheus_info:
+    url: http://192.168.100.100:9090/api/v1/query
+
+  database:
+    prefix: alert_
+    type: file # mongodb, file
+    host: localhost
+    port: 27017
+    username: root
+    password: mongodb_password
+
+  msg:
+    proxies:
+      enable: False 
+      ipaddr: 192.168.100.100
+      port: 3128
+    rabbitmq: 
+      enable: True
+      host: localhost
+      queue: telegram_queue
+      username: hoanghd
+      password: rabbitmq_password
+    send_msg: True
+    form_msg: markdown
+    debug_bot:
+      bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+      chat_id: -4572608076
+
+## All rules are defined here
+rules:
+### LAYER 7, HTTP STATUS CODE ALERT
+  - query: http_status != 1
+    title: Http Status Code
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 0: 'Network Unreachable'
+        - 1: 'Connection Timedout'
+        - 2: 'SSL Error'
+        - 100: 'Continue'
+        - 101: 'Switching Protocols'
+        - 400: 'Bad Request'
+        - 401: 'Unauthorized'
+        - 402: 'Payment Required'
+        - 403: 'Forbidden'
+        - 404: 'Not Found'
+        - 405: 'Method Not Allowed'
+        - 406: 'Not Acceptable'
+        - 407: 'Proxy Authentication Required'
+        - 408: 'Request Timeout'
+        - 409: 'Conflict'
+        - 410: 'Gone'
+        - 411: 'Length Required'
+        - 412: 'Precondition Failed'
+        - 413: 'Payload Too Large'
+        - 414: 'URI Too Long'
+        - 415: 'Unsupported Media Type'
+        - 416: 'Range Not Satisfiable'
+        - 417: 'Expectation Failed'
+        - 418: 'Im a teapot'
+        - 421: 'Misdirected Request'
+        - 426: 'Upgrade Required'
+        - 428: 'Precondition Required'
+        - 429: 'Too Many Requests'
+        - 431: 'Request Header Fields Too Large'
+        - 451: 'Unavailable For Legal Reasons'
+        - 500: 'Internal Server Error'
+        - 501: 'Not Implemented'
+        - 502: 'Bad Gateway'
+        - 503: 'Service Unavailable'
+        - 504: 'Gateway Timeout'
+        - 505: 'HTTP Version Not Supported'
+        - 506: 'Variant Also Negotiates'
+        - 507: 'Insufficient Storage'
+        - 508: 'Loop Detected'
+        - 510: 'Not Extended'
+        - 511: 'Network Authentication Required'
+      threshold_info:
+        - 200: 'OK'
+        - 201: 'Created'
+        - 202: 'Accepted'
+        - 203: 'Non-Authoritative Information'
+        - 204: 'No Content'
+        - 205: 'Reset Content'
+        - 206: 'Partial Content'
+        - 300: 'Multiple Choices'
+        - 301: 'Moved Permanently'
+        - 302: 'Found'
+        - 303: 'See Other'
+        - 304: 'Not Modified'
+        - 305: 'Use Proxy'
+        - 307: 'Temporary Redirect'
+        - 308: 'Permanent Redirect'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - HTTP Status Code is {{ value }} ({{ unit }})
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - HTTP Status Code is {{ value }} ({{ unit }})
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+### LAYER 3+4 ALERT
+  - query: icmp_response_time
+    title: ICMP Response Time
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 0: ms
+      threshold_info:
+        - 1: ms
+      threshold_unit: 
+        - unit: '%'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - ICMP Response Time is {{ value }}{{ unit }}
+          - Device is Down 😭
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - ICMP Response Time is {{ value }}{{ unit }}
+          - Device is Up 🥰
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: tcp_status
+    title: TCP Status
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 0: Port closed 😭
+      threshold_info:
+        - 1: Port opened 🥰
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - TCP Status is {{ value }}
+          - Device is {{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - TCP Status is {{ value }}
+          - Device is {{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+### CEPH ALERT
+  - query: ceph_health_status
+    title: Ceph Health Status
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 1: Warning 🔥
+        - 2: Error ❌
+      threshold_info:
+        - 0: Ok ✅
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
+          chat_id: -4055206284
+        description: 
+          - Ceph Health Status is {{ unit }}
+          - 'Use command: `ceph health detail` to check more detail'
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
+          chat_id: -4055206284
+        description: 
+          - Ceph Health Status is {{ unit }}
+          - 'Use command: `ceph health detail` to check more detail'
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: sum by (instance, public_addr, cluster_addr, device_class, hostname, ceph_daemon) (ceph_osd_up)
+    title: Ceph OSD Status
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 0: Down 😭
+      threshold_info:
+        - 1: Up 🥰
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
+          chat_id: -4055206284
+        description: 
+          - Ceph OSD Status is {{ value }}
+          - Ceph OSD is {{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
+          chat_id: -4055206284
+        description: 
+          - Ceph OSD Status is {{ value }}
+          - Ceph OSD is {{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: ceph_mon_quorum_status
+    title: Ceph Monitor Quorum Status
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 0: Down 😭
+      threshold_info:
+        - 1: Up 🥰
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
+          chat_id: -4055206284
+        description: 
+          - Ceph Monitor Quorum is {{ value }}
+          - Ceph Monitor Quorum is {{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
+          chat_id: -4055206284
+        description: 
+          - Ceph Monitor Quorum is {{ value }}
+          - Ceph Monitor Quorum is {{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: count(ceph_mgr_metadata)
+    title: Ceph Manager Status
+    enable: True
+    compare: '<'
+    values:
+      threshold_warn:
+        - 5: 'Mgrs'
+      threshold_unit: 
+        - unit: 'Mgrs'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
+          chat_id: -4055206284
+        description: 
+          - Ceph Manager currently {{ value }}/5 {{ unit }}
+          - Ceph Manager is Unhealthy 😭
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
+          chat_id: -4055206284
+        description: 
+          - Ceph Manager currently {{ value }}/5 {{ unit }}
+          - Ceph Manager is Healthy 🥰
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: ceph_pool_percent_used * 100
+    title: Ceph Pool Percent Used
+    enable: True
+    compare: '>'
+    values:
+      threshold_warn:
+        - 75: '%'
+        - 80: '%'
+        - 85: '%'
+        - 90: '%'
+      threshold_unit: 
+        - unit: '%'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
+          chat_id: -4055206284
+        description: 
+          - Ceph Pool Percent Used is {{ value }}{{ unit }}
+          - State of Emergency 🆘
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
+          chat_id: -4055206284
+        description: 
+          - Ceph Pool Percent Used is {{ value }}{{ unit }}
+          - State of Emergency Resolved ❤️
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+      
+### ZFS ALERT
+  - query: zfs_capacity
+    title: ZFS Pool Capacity
+    enable: False
+    compare: '>'
+    values:
+      threshold_warn:
+        - 75: '%'
+        - 80: '%'
+        - 85: '%'
+        - 90: '%'
+      threshold_unit: 
+        - unit: "%"
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - ZFS Pool Capacity is {{ value }}{{ unit }}
+          - State of Emergency 🆘
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - ZFS Pool Capacity is {{ value }}{{ unit }}
+          - State of Emergency Resolved ❤️
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: zpool_status
+    title: ZFS Pool Status
+    enable: False
+    compare: '=='
+    values:
+      threshold_warn:
+        - 0: Offline 😭
+      threshold_info:
+        - 1: Online 🥰
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - ZFS Pool Status Code is {{ value }}
+          - ZFS Pool Status is {{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - ZFS Pool Status Code is {{ value }}
+          - ZFS Pool Status is {{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+### RABBITMQ ALERT
+  - query: sum by (rabbitmq_host, name) (rabbitmq_details_queue{})
+    title: Volumes Waiting Backup
+    enable: False
+    compare: '!='
+    values:
+      threshold_warn:
+        - 0: volumes
+      threshold_unit: 
+        - unit: volumes
+    alerts:
+      - compare: True
+        severity: Info ℹ️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - '{{ value }} {{ unit }} waitings for backup'
+      - compare: False
+        severity: Finished backup all volumes 😇
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+### PROCESS ALERT 
+  - query: total_process
+    title: Backup Processes 
+    enable: False
+    compare: '!='
+    values:
+      threshold_warn:
+        - 0: processes
+      threshold_unit: 
+        - unit: volumes
+    alerts:
+      - compare: True
+        severity: Info ℹ️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Staring Process Backup 😇
+      - compare: False
+        severity: Finish Process Backup 🎉
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: sum by (instance, description) (fortigate_ha_status)
+    title: Fortigate HA Status
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 0: Inactive 😭
+      threshold_unit: 
+        - unit: Active 🥰
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Fortigate HA Status is {{ value }}
+          - HA is {{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Fortigate HA Status is {{ value }}
+          - HA is {{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: sum by (ifIndex, ifName, instance, ifAlias) (ifOperStatus{ifName!~"^Vl.*|^VL.*",instance=~"192.168.123.1"})
+    title: Fortigate Interface Status
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 2: Down 😭
+      threshold_unit: 
+        - unit: Up 🥰
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Interface Code is {{ value }}
+          - Interface is {{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Interface Code is {{ value }}
+          - Interface is {{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+### PROXMOX ALERT
+  - query: sum by (name, node, type) (label_replace(sum by (id, instance, name, node, type) (pve_up) * on (id, instance) group_left (name, node, type) pve_guest_info, "id", "", "", ""))
+    title: Virtual Machine Status
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 0: Stopped 😭
+      threshold_unit: 
+        - unit: Started 🥰
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Virtual Machine is {{ value }}
+          - State is {{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Virtual Machine is {{ value }}
+          - State is {{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: pve_custom_disk_info{filesystem="/dev/mapper/pve-root"} #NTJC
+  # - query: pve_custom_disk_info{filesystem="rpool/ROOT/pve-1"} #Zenhub
+    title: OS Drive Capacity
+    enable: True
+    compare: '>'
+    values:
+      threshold_warn:
+        - 75: '%'
+        - 80: '%'
+        - 85: '%'
+        - 90: '%'
+      threshold_unit: 
+        - unit: '%'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - OS Drive Capacity is {{ value }}{{ unit }}
+          - State of Emergency 🆘
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - OS Drive Capacity is {{ value }}{{ unit }}
+          - State of Emergency Resolved ❤️
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: round(((sum by (instance) (pve_custom_overcommit_memory) + 8589934592) / (sum by (instance) (pve_custom_node_total_memory_size_bytes))) * 100, 1)
+    title: Overcommit Memory Status
+    enable: True
+    compare: '>'
+    values:
+      threshold_warn:
+        - 120: '%'
+        - 130: '%'
+        - 140: '%'
+        - 150: '%'
+      threshold_unit: 
+        - unit: '%'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Overcommit Memory is {{ value }}{{ unit }}
+          - 8G memory allocated for OS
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Overcommit Memory is {{ value }}{{ unit }}
+          - 8G memory allocated for OS
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: round((((sum by (instance) (pve_custom_overcommit_cpu + 8)) / (sum by (instance) (pve_custom_node_cpu_core_size))) * 100), 1)
+    title: Overcommit CPU Status
+    enable: True
+    compare: '>'
+    values:
+      threshold_warn:
+        - 180: '%'
+        - 200: '%'
+      threshold_unit: 
+        - unit: '%'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Overcommit CPU is {{ value }}{{ unit }}
+          - 8 CPU allocated for OS
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Overcommit CPU is {{ value }}{{ unit }}
+          - 8 CPU allocated for OS
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  - query: pve_custom_node_cpu_temperature
+    title: CPU Temperature Overheat
+    enable: True
+    compare: '>'
+    values:
+      threshold_warn:
+        - 75: '°'
+        - 80: '°'
+        - 85: '°'
+        - 90: '°'
+      threshold_unit: 
+        - unit: '°'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - CPU Temperature is {{ value }}{{ unit }}
+          - Overheat 🔥
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - CPU Temperature is {{ value }}{{ unit }}
+          - Normal 🥰
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  # - query: round((pve_custom_node_used_memory_size_bytes / pve_custom_node_total_memory_size_bytes) * 100, 1)
+  - query: (node_memory_MemTotal_bytes{} - node_memory_MemAvailable_bytes{}) / node_memory_MemTotal_bytes{} * 100
+    title: Memory Used Status
+    enable: True
+    compare: '>'
+    values:
+      threshold_warn:
+        - 65: '%'
+      threshold_unit: 
+        - unit: '°'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - High Memory Used is {{ value }}{{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - High Memory Used is {{ value }}{{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+  # - query: sum by (instance) (pve_cpu_usage_ratio{} / pve_cpu_usage_limit{} and on(id) pve_node_info{})
+  - query: 100 - (avg by (instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
+    title: CPU Usage Status
+    enable: True
+    compare: '>'
+    values:
+      threshold_warn:
+        - 65: '%'
+      threshold_unit: 
+        - unit: '%'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - High CPU Usage is {{ value }}{{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - High CPU Usage is {{ value }}{{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+### CISCO ALERT
+  - query: sum by (ifIndex, ifName, instance, ifAlias) (ifOperStatus{ifName!~"^Vl.*|^VL.*|Fa0|Nu.*|Stack.*",instance=~"192.168.123.2|192.168.100.252|192.168.100.252|10.10.99.252|10.10.99.253|10.10.20.252|10.10.99.253"})
+    title: Cisco Interface Status
+    enable: True
+    compare: '=='
+    values:
+      threshold_warn:
+        - 2: Down 😭
+      threshold_unit: 
+        - unit: Up 🥰
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Interface Code is {{ value }}
+          - Interface is {{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - Interface Code is {{ value }}
+          - Interface is {{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
+
+### SSL ALERT
+# This rule is used to check SSL expiration
+  - query: ssl_information
+    title: SSL Expiration Warning
+    enable: True
+    compare: '<'
+    values:
+      threshold_warn:
+        - 5: 'days'
+        - 10: 'days'
+        - 15: 'days'
+        - 20: 'days'
+      threshold_unit: 
+        - unit: '%'
+    alerts:
+      - compare: True
+        severity: Warning ⚠️
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - SSL is about to expire 🙃
+          - SSL Expiration is {{ value }} {{ unit }}
+      - compare: False
+        severity: Resolved ✅
+        send_msg: True
+        telegram:
+          bot_id: 7509858733:AAHw4x3LhS64X7cGbi7LrcbW6jXDgqgdjhQ
+          chat_id: -4572608076
+        description: 
+          - SSL has been renewed ❤️
+          - SSL Expiration is {{ value }} {{ unit }}
+    msg:
+      contacts: 
+        - hoanghd
+        - khoanh
+      verify: 3
+      resend: 0
