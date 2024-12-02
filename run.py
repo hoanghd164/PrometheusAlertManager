@@ -355,6 +355,13 @@ def main(key, id, value_metric, value_resend, get_value_of_compare, compare, val
         final_msgs = process_alerts(alerts, value_metric, unit, static_msg, msg_description)
         data = read_db(DB_FILE_PATH)
 
+        # entry = {}
+        # if 'old_value' not in entry:
+        #     entry['old_value'] = None
+
+        # if entry['old_value'] is None:
+        #     entry['old_value'] = []
+        
         for entry in data:
             if entry['id'] == id:
                 entry['count'] += 1
@@ -396,7 +403,7 @@ def main(key, id, value_metric, value_resend, get_value_of_compare, compare, val
                     if value_metric in entry['old_value']:
                         entry['change'] = False
 
-                    if entry['old_value'][0] != []:
+                    if entry['old_value'] != []:
                         if get_value_of_compare in entry['old_value']:
                             entry['change'] = False
                         
