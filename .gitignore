@@ -1,3 +1,5 @@
 db.*.json
 error.log
 info.log
+# git rm --cached info.log
+# git rm --cached error.log
