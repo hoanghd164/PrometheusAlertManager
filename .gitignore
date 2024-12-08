@@ -3,3 +3,4 @@ error.log
 info.log
 # git rm --cached info.log
 # git rm --cached error.log
+# git rm --cached db.stg.json
