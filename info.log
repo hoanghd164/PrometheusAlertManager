@@ -2429,3 +2429,430 @@ Dec 02 10:43:41 netbox-server python[3608418]: demo_metric returned no results
 Dec 02 10:43:43 netbox-server python[3608418]: demo_metric returned no results
 Dec 02 10:43:51 netbox-server python[3608418]: demo_metric returned no results
 Dec 02 10:43:53 netbox-server python[3608418]: demo_metric returned no results
+Dec 02 20:04:37 netbox-server python[3612223]: [db.zenhub.json] [True] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [121.0]] Send message to Telegram
+Dec 02 20:04:37 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Warning ⚠️
+Description:
+ - Overcommit CPU is 121.0%
+ - 8 CPU allocated for OS
+Contacts: hoanghd, khoanh
+Dec 02 20:10:45 netbox-server python[3612223]: [db.zenhub.json] [False] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [114.0]] Send message to Telegram
+Dec 02 20:10:45 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Resolved ✅
+Description:
+ - Overcommit CPU is 114.0%
+ - 8 CPU allocated for OS
+Duration: 8 minutes, 10.73 seconds
+Contacts: hoanghd, khoanh
+Dec 02 22:19:31 netbox-server python[3612223]: [db.zenhub.json] [True] [---- Virtual Machine Status ---- Name: windows-ConsoleSW Node: pve05 Type: qemu [0.0]] Send message to Telegram
+Dec 02 22:19:31 netbox-server python[3612223]: [db.zenhub.json] ---- Virtual Machine Status ----
+Name: windows-ConsoleSW
+Node: pve05
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 03 08:16:27 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 03 08:16:27 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 03 08:16:27 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 03 08:16:27 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 03 08:21:46 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 03 08:21:46 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 7 minutes, 26.27 seconds
+Contacts: hoanghd, khoanh
+Dec 03 08:21:46 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 03 08:21:46 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 7 minutes, 26.28 seconds
+Contacts: hoanghd, khoanh
+Dec 03 20:05:14 netbox-server python[3612223]: [db.zenhub.json] [True] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [121.0]] Send message to Telegram
+Dec 03 20:05:14 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Warning ⚠️
+Description:
+ - Overcommit CPU is 121.0%
+ - 8 CPU allocated for OS
+Contacts: hoanghd, khoanh
+Dec 03 20:10:21 netbox-server python[3612223]: [db.zenhub.json] [False] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [114.0]] Send message to Telegram
+Dec 03 20:10:21 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Resolved ✅
+Description:
+ - Overcommit CPU is 114.0%
+ - 8 CPU allocated for OS
+Duration: 7 minutes, 9.54 seconds
+Contacts: hoanghd, khoanh
+Dec 04 08:33:13 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 04 08:33:13 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 04 08:33:13 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 04 08:33:13 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 04 08:33:14 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 04 08:33:14 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 04 08:38:33 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 04 08:38:33 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 8 minutes, 30.62 seconds
+Contacts: hoanghd, khoanh
+Dec 04 08:38:33 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 04 08:38:33 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 8 minutes, 30.63 seconds
+Contacts: hoanghd, khoanh
+Dec 04 08:39:36 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 04 08:39:36 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 9 minutes, 34.4 seconds
+Contacts: hoanghd, khoanh
+Dec 04 20:04:52 netbox-server python[3612223]: [db.zenhub.json] [True] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [121.0]] Send message to Telegram
+Dec 04 20:04:52 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Warning ⚠️
+Description:
+ - Overcommit CPU is 121.0%
+ - 8 CPU allocated for OS
+Contacts: hoanghd, khoanh
+Dec 04 20:09:58 netbox-server python[3612223]: [db.zenhub.json] [False] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [114.0]] Send message to Telegram
+Dec 04 20:09:58 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Resolved ✅
+Description:
+ - Overcommit CPU is 114.0%
+ - 8 CPU allocated for OS
+Duration: 7 minutes, 9.54 seconds
+Contacts: hoanghd, khoanh
+Dec 04 22:41:21 netbox-server python[3612223]: [db.zenhub.json] [True] [---- Virtual Machine Status ---- Name: W2W125d105 Node: pve04 Type: qemu [0.0]] Send message to Telegram
+Dec 04 22:41:21 netbox-server python[3612223]: [db.zenhub.json] ---- Virtual Machine Status ----
+Name: W2W125d105
+Node: pve04
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 05 09:16:08 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 05 09:16:08 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 05 09:16:08 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 05 09:16:08 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 05 09:16:08 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 05 09:16:08 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 05 09:23:35 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 05 09:23:35 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 9 minutes, 34.72 seconds
+Contacts: hoanghd, khoanh
+Dec 05 09:23:35 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 05 09:23:35 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 9 minutes, 34.73 seconds
+Contacts: hoanghd, khoanh
+Dec 05 09:23:35 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 05 09:23:35 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 9 minutes, 34.73 seconds
+Contacts: hoanghd, khoanh
+Dec 05 12:31:36 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://banhang.ntjc.org [200.0]] Send message to Telegram
+Dec 05 12:31:36 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://banhang.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 200.0 (OK)
+Duration: 3 days, 15 hours, 32 minutes, 38.09 seconds
+Contacts: hoanghd, khoanh
+Dec 05 20:05:02 netbox-server python[3612223]: [db.zenhub.json] [True] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [121.0]] Send message to Telegram
+Dec 05 20:05:02 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Warning ⚠️
+Description:
+ - Overcommit CPU is 121.0%
+ - 8 CPU allocated for OS
+Contacts: hoanghd, khoanh
+Dec 05 20:10:09 netbox-server python[3612223]: [db.zenhub.json] [False] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [114.0]] Send message to Telegram
+Dec 05 20:10:09 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Resolved ✅
+Description:
+ - Overcommit CPU is 114.0%
+ - 8 CPU allocated for OS
+Duration: 7 minutes, 9.61 seconds
+Contacts: hoanghd, khoanh
+Dec 06 08:37:08 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 06 08:37:08 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 06 08:37:08 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 06 08:37:08 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 06 08:37:08 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 06 08:37:08 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 06 08:42:27 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 06 08:42:27 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 7 minutes, 27.94 seconds
+Contacts: hoanghd, khoanh
+Dec 06 08:43:31 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 06 08:43:31 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 8 minutes, 31.69 seconds
+Contacts: hoanghd, khoanh
+Dec 06 08:48:49 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 06 08:48:49 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 13 minutes, 50.22 seconds
+Contacts: hoanghd, khoanh
+Dec 06 20:05:06 netbox-server python[3612223]: [db.zenhub.json] [True] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [121.0]] Send message to Telegram
+Dec 06 20:05:06 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Warning ⚠️
+Description:
+ - Overcommit CPU is 121.0%
+ - 8 CPU allocated for OS
+Contacts: hoanghd, khoanh
+Dec 06 20:10:13 netbox-server python[3612223]: [db.zenhub.json] [False] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [114.0]] Send message to Telegram
+Dec 06 20:10:13 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Resolved ✅
+Description:
+ - Overcommit CPU is 114.0%
+ - 8 CPU allocated for OS
+Duration: 7 minutes, 9.64 seconds
+Contacts: hoanghd, khoanh
+Dec 06 20:51:07 netbox-server python[3612223]: [db.zenhub.json] [True] [---- Virtual Machine Status ---- Name: server-staging-99.250 Node: pve02 Type: qemu [0.0]] Send message to Telegram
+Dec 06 20:51:07 netbox-server python[3612223]: [db.zenhub.json] ---- Virtual Machine Status ----
+Name: server-staging-99.250
+Node: pve02
+Type: qemu
+Severity: Warning ⚠️
+Description:
+ - Virtual Machine is 0.0
+ - State is Stopped 😭
+Contacts: hoanghd, khoanh
+Dec 06 20:58:16 netbox-server python[3612223]: [db.zenhub.json] [False] [---- Virtual Machine Status ---- Name: server-staging-99.250 Node: pve02 Type: qemu [5.0]] Send message to Telegram
+Dec 06 20:58:16 netbox-server python[3612223]: [db.zenhub.json] ---- Virtual Machine Status ----
+Name: server-staging-99.250
+Node: pve02
+Type: qemu
+Severity: Resolved ✅
+Description:
+ - Virtual Machine is 5.0
+ - State is Started 🥰
+Duration: 9 minutes, 12.3 seconds
+Contacts: hoanghd, khoanh
+Dec 06 21:01:20 netbox-server python[3612223]: [db.zenhub.json] [False] [---- Ceph Manager Status ---- [5.0]] Send message to Telegram
+Dec 06 21:01:20 netbox-server python[3612223]: [db.zenhub.json] ---- Ceph Manager Status ----
+Severity: Resolved ✅
+Description:
+ - Ceph Manager currently 5.0/5 Mgrs
+ - Ceph Manager is Healthy 🥰
+Duration: 5 days, 2 minutes, 20.26 seconds
+Contacts: hoanghd, khoanh
+Dec 07 09:41:55 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 07 09:41:55 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 07 09:41:55 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 07 09:41:55 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 07 09:41:55 netbox-server python[3611988]: [db.ntjc.json] [True] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://files.ntjc.org [500.0]] Send message to Telegram
+Dec 07 09:41:55 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Warning ⚠️
+Description: HTTP Status Code is 500.0 (Internal Server Error)
+Contacts: hoanghd, khoanh
+Dec 07 09:49:22 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.128 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 07 09:49:22 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.128
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 9 minutes, 34.39 seconds
+Contacts: hoanghd, khoanh
+Dec 07 09:49:22 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.163 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 07 09:49:22 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.163
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 9 minutes, 34.4 seconds
+Contacts: hoanghd, khoanh
+Dec 07 09:49:22 netbox-server python[3611988]: [db.ntjc.json] [False] [---- Http Status Code ---- Instance: 192.168.100.100:16490 Ip: 113.161.201.171 Job: cus_exporter Url: https://files.ntjc.org [302.0]] Send message to Telegram
+Dec 07 09:49:22 netbox-server python[3611988]: [db.ntjc.json] ---- Http Status Code ----
+Instance: 192.168.100.100:16490
+Ip: 113.161.201.171
+Job: cus_exporter
+Url: https://files.ntjc.org
+Severity: Resolved ✅
+Description: HTTP Status Code is 302.0 (Found)
+Duration: 9 minutes, 34.4 seconds
+Contacts: hoanghd, khoanh
+Dec 07 20:04:46 netbox-server python[3612223]: [db.zenhub.json] [True] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [121.0]] Send message to Telegram
+Dec 07 20:04:46 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Warning ⚠️
+Description:
+ - Overcommit CPU is 121.0%
+ - 8 CPU allocated for OS
+Contacts: hoanghd, khoanh
+Dec 07 20:09:53 netbox-server python[3612223]: [db.zenhub.json] [False] [---- Overcommit CPU Status ---- Instance: 10.10.99.3:16490 [114.0]] Send message to Telegram
+Dec 07 20:09:53 netbox-server python[3612223]: [db.zenhub.json] ---- Overcommit CPU Status ----
+Instance: 10.10.99.3:16490
+Severity: Resolved ✅
+Description:
+ - Overcommit CPU is 114.0%
+ - 8 CPU allocated for OS
+Duration: 7 minutes, 9.47 seconds
+Contacts: hoanghd, khoanh
