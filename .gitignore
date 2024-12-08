@@ -1,6 +1,7 @@
 db.*.json
 error.log
 info.log
+config.vng.yml
 # git rm --cached info.log
 # git rm --cached error.log
 # git rm --cached db.stg.json
