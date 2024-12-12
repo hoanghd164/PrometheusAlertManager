@@ -27,32 +27,37 @@ def process_queue():
     # Declare the queue
     channel.queue_declare(queue=rabbitmq_queue, durable=True)
 
+    # Consume the queue
     def callback(ch, method, properties, body):
         message = json.loads(body)
         url = message['url']
         proxies = message['proxies']
 
-        # Send the request to Telegram
-        if proxies:
-            response = requests.get(url, proxies=proxies)
-        else:
-            response = requests.get(url)
+        try:
+            if proxies:
+                response = requests.get(url, proxies=proxies)
+            else:
+                response = requests.get(url)
 
-        print("Telegram status code:", response.status_code)
+            print("Telegram status code:", response.status_code)
 
-        if response.status_code == 200:
-            # Acknowledge the message
-            time.sleep(2)  # Delay before requeuing
-            ch.basic_ack(delivery_tag=method.delivery_tag)
-        else:
-            # Requeue the message with a delay
-            time.sleep(2)  # Delay before requeuing
+            if response.status_code == 200:
+                ch.basic_ack(delivery_tag=method.delivery_tag)
+            else:
+                time.sleep(2)
+                ch.basic_nack(delivery_tag=method.delivery_tag, requeue=True)
+
+        except requests.exceptions.ProxyError as e:
+            print(f"Error Proxy: {e}")
+            time.sleep(2)
             ch.basic_nack(delivery_tag=method.delivery_tag, requeue=True)
 
-    # Consume messages from the queue
-    channel.basic_qos(prefetch_count=1)
-    channel.basic_consume(queue=rabbitmq_queue, on_message_callback=callback)
+        except requests.exceptions.RequestException as e:
+            print(f"Error Request: {e}")
+            time.sleep(2)
+            ch.basic_nack(delivery_tag=method.delivery_tag, requeue=True)
 
+    channel.basic_consume(queue=rabbitmq_queue, on_message_callback=callback, auto_ack=False)
     print('Waiting for messages. To exit press CTRL+C')
     channel.start_consuming()
 
