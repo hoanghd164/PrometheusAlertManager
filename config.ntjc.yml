@@ -3,7 +3,7 @@
 default:
   debug: False
   interval: 60
-  log_debug: False
+  log_debug: True
   prometheus_info:
     url: http://192.168.100.100:9090/api/v1/query
 
@@ -35,7 +35,7 @@ default:
 ## All rules are defined here
 rules:
 ### LAYER 7, HTTP STATUS CODE ALERT
-  - query: http_status != 1
+  - query: http_status{role="status_code"}
     title: Http Status Code
     enable: True
     compare: '=='
@@ -123,8 +123,8 @@ rules:
       resend: 0
 
 ### LAYER 3+4 ALERT
-  - query: icmp_response_time
-    title: ICMP Response Time
+  - query: check_host{role="icmp_status"}
+    title: Check Host ICMP Status
     enable: True
     compare: '=='
     values:
@@ -142,8 +142,8 @@ rules:
           bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
           chat_id: -675948425
         description: 
-          - ICMP Response Time is {{ value }}{{ unit }}
-          - Device is Down 😭
+          - ICMP Status is {{ value }}{{ unit }}
+          - Device is unhealthy 😭
       - compare: False
         severity: Resolved ✅
         send_msg: True
@@ -151,8 +151,8 @@ rules:
           bot_id: 5663327891:AAFfF0BLvpIWAFNjTal687dw548eSwEWKW0
           chat_id: -675948425
         description: 
-          - ICMP Response Time is {{ value }}{{ unit }}
-          - Device is Up 🥰
+          - ICMP Status is {{ value }}{{ unit }}
+          - Device is healthy 🥰
     msg:
       contacts: 
         - hoanghd
@@ -160,8 +160,8 @@ rules:
       verify: 3
       resend: 0
 
-  - query: tcp_status
-    title: TCP Status
+  - query: check_host{role="tcp_status"}
+    title: Check Host TCP Status
     enable: True
     compare: '=='
     values:
@@ -319,7 +319,7 @@ rules:
           bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
           chat_id: -4055206284
         description: 
-          - Ceph Manager currently {{ value }}/5 {{ unit }}
+          - Ceph Manager currently {{ value }} {{ unit }}
           - Ceph Manager is Unhealthy 😭
       - compare: False
         severity: Resolved ✅
@@ -328,7 +328,7 @@ rules:
           bot_id: 6887654720:AAETbfEh1h6xopb4eMgqJ7uHPL_w1s4xR5c
           chat_id: -4055206284
         description: 
-          - Ceph Manager currently {{ value }}/5 {{ unit }}
+          - Ceph Manager currently {{ value }} {{ unit }}
           - Ceph Manager is Healthy 🥰
     msg:
       contacts: 
@@ -770,7 +770,6 @@ rules:
       verify: 3
       resend: 0
 
-  # - query: round((pve_custom_node_used_memory_size_bytes / pve_custom_node_total_memory_size_bytes) * 100, 1)
   - query: (node_memory_MemTotal_bytes{} - node_memory_MemAvailable_bytes{}) / node_memory_MemTotal_bytes{} * 100
     title: Memory Used Status
     enable: True
@@ -804,7 +803,6 @@ rules:
       verify: 3
       resend: 0
 
-  # - query: sum by (instance) (pve_cpu_usage_ratio{} / pve_cpu_usage_limit{} and on(id) pve_node_info{})
   - query: 100 - (avg by (instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
     title: CPU Usage Status
     enable: True
@@ -876,7 +874,7 @@ rules:
 
 ### SSL ALERT
 # This rule is used to check SSL expiration
-  - query: ssl_information
+  - query: http_status{role="ssl"}
     title: SSL Expiration Warning
     enable: True
     compare: '<'
